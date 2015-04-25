@@ -7,12 +7,12 @@ The codebook describes the variables of the data.
 
 1. The code first merges the two data sets training and test.
 X_train.txt and X_test.txt are read into the variables Training and Test respectively and then merged to the variable Data.
-Y_train.txt and Y_test.txt are read into the variables Training_Labels and Test_Labels respectively and then merged to the variable Labels
+Y_train.txt and Y_test.txt are read into the variables Training_Labels and Test_Labels respectively and then merged to the variable Labels.
 subject_train.txt and subject_test.txt are read into the variables Training_Subject and Test_Subject respectively and then merged to the variable Subject. I then change the names of Subject to "Subject".
 
 2. Then only the data concerning means and standard deviation is kept. 
 I read the features.txt file into the variable Features.
-Then I use the grep function to find all the instances where either "mean()" or "std()" occurs, and stores these indices to MeanSTD_Ind. I then update the Data variable to only have that particular subset.
+Then I use the grep function to find all the instances where either "mean()" or "std()" occurs, and store these indices to MeanSTD_Ind. I then update the Data variable to only have that particular subset.
 
 3. Then I clean up to activity names.
 I put the six activity labels into the variable Activity_Labels. then I update the Labels table to have the proper activity labels.
