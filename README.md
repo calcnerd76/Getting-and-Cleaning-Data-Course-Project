@@ -15,10 +15,10 @@ I read the features.txt file into the variable Features.
 Then I use the grep function to find all the instances where either "mean()" or "std()" occurs, and store these indices to MeanSTD_Ind. I then update the Data variable to only have that particular subset.
 
 3. Then I clean up to activity names.
-I put the six activity labels into the variable Activity_Labels. then I update the Labels table to have the proper activity labels.
+I put the six activity labels into the variable Activity_Labels. Then I update the Labels table to have the proper activity labels.
 
 4. Then I clean up the variable names.
 I first give them the names from the feature file. Then I change "mean()" to Mean, "std()" to "StdDev". I also change any name beginning with a t to Time and any name beginning with a f to Frequency. Finally I remove the "-"s. 
 
 5. Finally I create a tidy data set with the averages for subject and activity.
-First I make a TidyData variable before taking the averages. Then I write that to a "Tidydata.txt" file. Then I make a TidyData_Averages variable by using the ddply to take the mean of the columns over Subject and Activity. Then I add the word "Mean" to each of the variable names since these are now means. Lastly, I write this to the file "TidyData_Averages.txt".
+First I make a TidyData variable before taking the averages. Then I write that to a "Tidydata.txt" file. Then I make a TidyData_Averages variable by using the ddply function to take the mean of the columns over Subject and Activity. Then I add the word "Mean" to each of the variable names since these are now means. Lastly, I write this to the file "TidyData_Averages.txt".
