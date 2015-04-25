@@ -6,9 +6,9 @@ This script will output two files: 1. A tidy data set, but before the averages a
 The codebook describes the variables of the data.
 
 1. The code first merges the two data sets training and test.
-X_train.txt, X_test.txt, and read into the variables Training and Test respectively and then merged to the variable Data.
-Y_train.txt, Y_test.txt, and read into the variables Training_Labels and Test_Labels respectively and then merged to the variable Labels
-subject_train.txt, subject_test.txt, and read into the variables Training_Subject and Test_Subject respectively and then merged to the variable Subject. I then change the names of Subject to "Subject".
+X_train.txt and X_test.txt are read into the variables Training and Test respectively and then merged to the variable Data.
+Y_train.txt and Y_test.txt are read into the variables Training_Labels and Test_Labels respectively and then merged to the variable Labels
+subject_train.txt and subject_test.txt are read into the variables Training_Subject and Test_Subject respectively and then merged to the variable Subject. I then change the names of Subject to "Subject".
 
 2. Then only the data concerning means and standard deviation is kept. 
 I read the features.txt file into the variable Features.
